@@ -12,3 +12,9 @@ Es una WebApp que fue creada con angular 4  para consumir los protocols HTTP que
 - Materialize y Materialize Icons
 - Formuarios de creación y edición
 - Consumo de JSON Server
+
+## Imagenes de Aplicación.
+
+<img src="src/assets/img/get.png" alt="">
+<img src="src/assets/img/getAll.png" alt="">
+<img src="src/assets/img/create.png" alt="">
