@@ -1,0 +1,10 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">{{ titulo_webapp }}</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a [routerLink]="['/']" ><i class="material-icons left">home</i>Inicio</a></li>
+        <li [routerLinkActive]="['active']" ><a [routerLink]="['/todos-los-mensajes']" ><i class="material-icons left">cloud_circle</i>100 Recursos</a></li>
+      </ul>
+    </div>
+</nav>
+

@@ -1,0 +1,36 @@
+<br><br>
+<div class="container">
+    <div class="row">
+        <h3>Edicion del Mensaje {{ id_producto }}</h3>
+    </div>
+  <div class="row">
+    <form class="col s12" #formularioMensaje="ngForm" (ngSubmit)="guardarMensaje()">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">title</i>
+          <input id="icon_prefix" type="text" class="validate" name="title" #title="ngModel" [(ngModel)]="mensaje.title" required >
+          <label for="icon_prefix">Titulo</label>
+          <span *ngIf="title.touched && !title.valid">
+              El Titulo es obligatorio.
+          </span>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">message</i>
+          <input id="icon_telephone" type="tel" class="validate" name="body" #body="ngModel" [(ngModel)]="mensaje.body" required >
+          <label for="icon_telephone">Mensaje</label>
+          <span *ngIf="body.touched && !body.valid">
+              El Mensaje es obligatorio.
+          </span>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action" [disabled]="!formularioMensaje.form.valid">Guardar
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+  <div class="row">
+      <a [routerLink]="['/todos-los-mensajes']" class="btn waves-effect waves-light grey lighten-1"  name="action">Cancelar
+            <i class="material-icons right">send</i>
+        </a>
+  </div>
+</div>

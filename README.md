@@ -1,6 +1,6 @@
 # Webapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
+Es una WebApp que fue creada con angular 4  para consumir los protocols HTTP que estan disponibles en la APIRESTful de JSONPlaceholder
 
 ## Development server
 

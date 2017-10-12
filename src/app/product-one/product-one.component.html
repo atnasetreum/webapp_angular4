@@ -1,0 +1,20 @@
+<div class="container">
+       <div class="row">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><b>Titulo:</b> {{ items_one.title}}</span>
+              <p><b>Mensaje:</b> {{ items_one.body}}.</p>
+            </div>
+            <div class="card-action">
+              <a>Mensaje No. {{ id_producto}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <a  [routerLink]="['/todos-los-mensajes']" class="waves-effect waves-light btn"><i class="material-icons right">keyboard_return</i>Regresar</a>
+      </div>
+</div>
+
+<span *ngIf="!items_one">Cargando ...</span>
